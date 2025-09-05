@@ -2233,6 +2233,17 @@ position = Vector2(828, 796)
 scale = Vector2(3720, 200)
 texture = SubResource("CanvasTexture_4lyss")
 
+[node name="EndMessage" type="Label" parent="."]
+offset_left = 1952.0
+offset_top = 392.0
+offset_right = 2280.0
+offset_bottom = 519.0
+text = "Thanks for playing the alpha!
+
+You can now go back to the hub, purchase upgrades and attempt to acquire the rest of the weapons."
+horizontal_alignment = 1
+autowrap_mode = 2
+
 [connection signal="timeout" from="DoorChecker/CheckDoor" to="." method="_on_check_door_timeout"]
 [connection signal="body_entered" from="BossBounce" to="Boss" method="_on_boss_bounce_body_entered"]
 [connection signal="dead" from="Boss" to="." method="_on_boss_dead"]
